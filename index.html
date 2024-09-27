@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            background: url("https://img.freepik.com/vetores-gratis/plano-de-fundo-realista-em-estilo-futurista_23-2149129125.jpg");
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        header img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+
+        header img:first-child{
+            width: 40px;
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            display: none;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 46px;
+        }
+
+        nav {
+            height: 40px;
+            width: 100%;
+            background-color: blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        nav ul {
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        nav ul li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        nav ul li a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        nav ul li a:hover {
+            background-color: blue;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 60px;
+            background: url("https://img.freepik.com/vetores-gratis/plano-de-fundo-realista-em-estilo-futurista_23-2149129125.jpg");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            flex-direction: column;
+        }
+
+        footer span {
+            color: white;
+        }
+
+        @media screen and (max-width: 800px) {
+            header {
+                flex-direction: column;
+            }
+
+            header img:first-child {
+                display: block;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/1024px-Hamburger_icon_white.svg.png" alt="menu">
+        <img src="https://avatars.githubusercontent.com/u/18250227?v=4" alt="eu">
+        <h1>Otávio Lube</h1>
+    </header>
+
+
+    <nav>
+
+        <ul>
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Portfólio</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFiwsGTHPChCkWTcicnuSUtzu8D_smwTa31g&s"
+            alt="reportagem">
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi odio, obcaecati earum non ullam tempore
+            accusamus odit voluptas consequatur porro at quisquam nam, accusantium dolorem alias consectetur. Quaerat,
+            beatae laborum!</p>
+
+    </main>
+
+    <footer>
+
+        <section>
+            <a href="#">Linkedin</a>
+            <a href="#">Github</a>
+            <a href="#">Instagram</a>
+        </section>
+
+        <span>Desenvolvido com ❤ por Otávio Lube</span>
+
+    </footer>
+
+</body>
+
+</html>
